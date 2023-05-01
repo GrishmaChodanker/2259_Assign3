@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fluid Website</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <style>
+        body {
+  margin: 0;
+  font-family: "Helvetica", "Arial", sans-serif;
+}
+
+.directions {
+  padding: 20px; 
+  text-align: center;
+  background: #FFFF00;
+  color: #222222;
+}
+
+.page-header {
+  margin: 0 auto;
+  padding: 80px 20px;
+  width: 760px; /** REMOVED **/
+  text-align: center;
+  font-family: Courier ;
+  /* font-weight: bold; */
+  background: #aae7df;
+  color: #110202;
+}
+
+.page-title {
+  margin: 0;
+  font-size: 2em;
+  animation: fade-in 2s linear infinite;
+}
+
+.menu {
+  margin: 0 auto;
+   width: 800px; /** REMOVED **/
+  background: #f09469;
+  text-align: center;
+}
+
+.menu ul.social-menu {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.menu ul.social-menu li {
+  display: inline-block;
+}
+
+.menu ul.social-menu li a {
+  padding: 20px;
+  display: inline-block;
+  color: #0f0f0f;
+  background-color: rgb(231, 236, 157);
+}
+.menu ul.social-menu li a:hover {
+  background-color: #f1aeae;
+  color: #52043e;
+  border-radius: 80%;
+}
+
+
+.container {
+  margin: 0 auto;
+  padding: 20px;
+  width: 760px; /** REMOVED **/
+  max-width: 800px; /** ADDED **/
+  background: #f1aeae;
+ 
+}
+@keyframes hithere {
+  from { transform: scale(0); }
+  to { transform: scale(1); }
+}
+.container img {
+  width: 400px;
+
+}
+
+.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+    animation: hithere 2s ease infinite;
+}
+
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+    animation: hithere 2s ease infinite;
+
+}
+
+.page-footer {
+  margin: 0 auto;
+  padding: 40px 20px;
+   width: 760px; /** REMOVED **/
+  text-align: center;
+  background: #FDB913;
+}
+
+
+.fade-in {
+  animation: fade-in 2s linear infinite;
+}
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+  
+    </style>
+  </head>
+  <body>
+<!-- <div class="directions">Directions: Review the upgraded styles. All upgrades are indicated by comments in the CSS. Once you understand the changes, identify any remaining parts of this design that can be optimized for a fluid design.</div> -->
+
+<div class="page-header">
+  <h1 class="page-title">Relaxing Activities To Do At The Beach</h1>
+</div><!-- end .page-header -->
+
+<div class="menu">
+    <ul class="social-menu">
+    <li><a href="index.html">Responsive</a></li>
+    <li><a href="adaptive.html">Adaptive</a></li>
+    <li><a href="fluid.html">Fluid</a></li>
+    <li><a href="fixed.html">Fixed</a></li>
+    <li><a href="mobile.html">Mobile-First</a></li>
+  </ul>
+</div>
+
+<div class="container">
+
+    <img class="alignright" src="11.jpg" alt="sun glaring through clouds viewed from a beach">
+
+  <p>It’s a change of scenery. Some studies show that your senses experiencing the same thing over and over again can cause stress. When you change your setting and go to the beach, your senses are engaged in new sights, smells, tastes, and sounds. This can improve your mental state and increase feelings of relaxation.</p>
+  
+  <p>It improves overall well-being. Getting exposure to the sun and ocean air is great for your mental health. “Surf therapy” is shown to boost your overall mood. Getting in the water and moving around increases mindfulness and allows you to get some physical activity.</p>
+
+    <img class="alignleft" src="12.jpg" alt="mountains and trees on the other side of a body of water">
+
+  <p>It lowers stress. Being in nature, a place you feel safe, can lower your blood pressure and stress hormone levels. Likewise, spending time at the beach can lessen anxiety and nervous system arousal, which is what makes you feel stressed and anxious. </p>
+
+    <p>It lifts your mood. Time on the beach increases your self-esteem and promotes relaxation. People with attention deficit disorder can feel calmer at the beach. Walking along the shoreline can make you feel less isolated and happier. </p>
+
+</div><!-- end .container -->
+
+
+</body>
+</html>

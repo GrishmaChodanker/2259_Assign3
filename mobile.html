@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <title>UNSPLASH PHOTOGRAPHY</title>
+	<style>
+     @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0;
+    background: #f5d68056;
+    height: auto;
+  scroll-behavior: smooth;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+img {
+    display:flex;
+    width: 100%;
+    animation: fade-in-down 2s ease infinite;
+}
+.fade-in-down {
+  animation: fade-in-down 2s ease infinite;
+}
+@keyframes fade-in-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+main {
+    max-width: 900px;
+    margin: auto;
+    box-shadow: 30px 0px 40px rgba(250, 80, 1, 0.493), -30px 0px 40px rgba(187, 169, 4, 0.548);
+}
+
+#landing {
+    background: #d64e3c60;
+    
+}
+
+#landing-text {
+    display: flex;
+    flex: 0 1 40vw;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-right: 1rem;
+    padding-left: 1rem;
+
+}
+
+#landing-text h2 {
+    color: #420125;
+
+}
+
+.btn {
+    padding: 0.5rem 2rem;
+    border: 1px #230242 solid;
+    display: inline-block;
+    margin: 2rem 0 0;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #913b02;
+    outline: 0;
+    transition: background 400ms ease;
+    animation: bounce2 2s ease infinite;
+}
+
+.btn:hover {
+    background: #f7da5bb6;
+}
+
+
+
+#header {
+    padding: 1.5rem;
+    text-align: center;
+    background: #eebc3488;
+    color: #fa0169;
+    
+}
+
+#header h2 {
+    border-left: dotted 4px #fa0169;
+    border-right: dotted 4px #fa0169;
+    display: inline-block;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.caption {
+    padding: 0.8rem;
+    text-align: center;
+}
+
+/* screen sizes 500px and up */
+@media(min-width: 500px) {
+    #landing{
+        display: flex;
+        height: 100%;
+        text-align: center;
+        
+    }
+
+    #landing-text {
+        height: 100vh;
+        
+    }
+
+    #landing-image {
+        height: 100vh;
+        
+    }
+}
+.navigation a{
+  color: #ffffff;
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: 500;
+  /* letter-spacing: 1px; */
+  padding: 5px;
+ 
+  border-radius: 20px;
+  transition: 0.3s;
+  transition-property: background;
+}
+
+.navigation a:not(:last-child){
+  margin-right: 10px;
+}
+
+.navigation a:hover{
+  background: #a13131;
+}
+
+/* screen sizes 700px and up */
+@media(min-width: 700px) {
+    .btn {
+        padding: 1rem 3rem;
+    }
+}
+@media(min-width: 700px) {
+    .btn2 {
+        padding: 1rem 3rem;
+    }
+}
+.btn2:hover {
+    background: #f5783eb6;
+}
+.btn2 {
+    padding: 0.5rem 2rem;
+    border: 1px #700000 solid;
+    display:grid;
+    margin: 2rem 0 0;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #5e0505;
+    outline: 0;
+    margin-left: 100px;
+    margin-right: 100px;
+    transition: background 400ms ease;
+}
+.page-header {
+    /* margin: 0 auto; */
+  padding: 40px 20px;
+   width: 860px;  
+   box-shadow: 30px 0px 40px rgba(250, 80, 1, 0.493);
+   text-align: center;
+  background: #d4ab42;
+  
+}
+.bounce2 {
+  animation: bounce2 2s ease infinite;
+}
+@keyframes bounce2 {
+	0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+	40% {transform: translateY(-30px);}
+	60% {transform: translateY(-15px);}
+}
+	</style>
+</head>
+<body>
+    
+    <main>
+        
+        <!-- Landing Area -->
+        <div id="landing">
+            <div class="page-header">
+                <!-- <h1 class="page-title">Fluid Layout Design Example</h1> -->
+                <a href="index.html" class="btn2" id="view-work">
+                    Home Page
+                </a>
+                <a href="adaptive.html" class="btn2" id="view-work">
+                    Adaptive
+                </a>
+                <a href="fluid.html" class="btn2" id="view-work">
+                    Fluid
+                </a>
+                <a href="fixed.html" class="btn2" id="view-work">
+                    Fixed
+                </a>
+                <a href="mobile.html" class="btn2" id="view-work">
+                    Mobile-First
+                </a>
+              </div>
+            <div id="landing-text">
+                <div id="landing-text-inner">
+                    <h1>BEACH PHOTOGRAPHY</h1>
+                    <h2>Beautiful Beach Quotes</h2>
+                    <a href="#images" class="btn" id="view-work">
+                        View
+                    </a>
+                </div>
+            </div>
+            <div id="landing-image"></div>
+        </div>
+        <div id="images">
+            <div id="header">
+                <h2>Photos</h2>
+            </div>
+            <img src="6.jpg" alt="">
+            <div class="caption">
+                <h3>Photo One</h3>
+                <p>"B.E.A.C.H.: Best Escape Anyone Can Have" – Unknown</p>
+            </div>
+            <img src="2.jpg" alt="">
+            <div class="caption">
+                <h3>Photo Two</h3>
+                <p>"Sandy feet and seashells welcome here"</p>
+            </div>
+            <img src="3.jpg" alt="">
+            <div class="caption">
+                <h3>Photo Three</h3>
+                <p>"On the beach, you can live in bliss" - Dennis Wilson</p>
+            </div>
+            <img src="4.jpg" alt="">
+            <div class="caption">
+                <h3>Photo four</h3>
+                <p>"To escape and sit quietly on the beach – that's my idea of paradise" – Emilia Wickstead</p>
+            </div>
+            <img src="5.jpg" alt="">
+            <div class="caption">
+                <h3>Photo Five</h3>
+                <p>"There is no new wave, only the sea" - Claude Chabrol </p>
+            </div>
+        </div>
+    </main>
+   
+    
+</body>
+</html>

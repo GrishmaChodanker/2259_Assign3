@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website Landing Page - With Background Video Slider | Travel</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  </head>
+  <style>
+   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+   @media (max-width: 1400px){
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+section{
+    padding: 100px 20px;
+  }
+
+header{
+  z-index: 999;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 10px 20px; */
+  transition: 0.5s ease;
+
+  /* position: relative; */
+ 
+  padding: 40px 100px;
+  
+
+}
+
+header .brand{
+  color: #fff;
+  font-size: 1em;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+header .navigation{
+  position: relative;
+}
+
+header .navigation .navigation-items a{
+  position: relative;
+  color: #fff;
+  font-size: 1em;
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 30px;
+  transition: 0.3s ease;
+}
+
+header .navigation .navigation-items a:before{
+  content: '';
+  position: absolute;
+  background: #fff;
+  width: 0;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  transition: 0.3s ease;
+}
+
+header .navigation .navigation-items a:hover:before{
+  width: 100%;
+}
+
+
+
+
+
+header .logo{
+  color: #f8f2f2;
+  position: absolute;
+  font-size: 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+header .navigation a{
+  color: #000;
+  font-size: 18px;
+  
+  font-weight: 500;
+  
+  padding: 2px;
+
+  transition: 0.3s;
+
+}
+
+header .navigation a:not(:last-child){
+  margin-right: 10px;
+}
+
+header .navigation a:hover{
+  background: #26eed3a8;
+}
+
+
+.home{
+
+
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  /* background: url(bg.jpg) no-repeat; */
+  background-size: cover;
+  background-position: center;
+}
+
+.home:before{
+  z-index: 777;
+  content: '';
+  position: absolute;
+  background: rgba(6, 157, 168, 0.548);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.home .content{
+  z-index: 888;
+  color: #fffcfc;
+  width: 70%;
+  margin-top: 30px;
+  display: none;
+}
+
+.home .content.active{
+  display: block;
+  padding: 50px 100px;
+}
+
+.home .content h1{
+  font-size: 2em;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  line-height: 75px;
+  margin-bottom: 20px;
+ font-family: Segoe Print;
+}
+
+.home .content h1 span{
+  font-size: 1.2em;
+  font-weight: 600;
+  font-family:  Gabriola;
+ 
+}
+
+.home .content p{
+  /* margin-bottom: 50px; */
+  font-family: Ink Free;
+  font-size: 20px;
+  
+ color: #ffffff;
+}
+
+.home .content a{
+  background: #fff;
+  padding: 15px 35px;
+  color: #2890bda9;
+  font-size: 1.1em;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 2px;
+  
+}
+
+
+
+.home video{
+  z-index: 000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+
+
+  section{
+    padding: 100px 20px;
+  }
+
+
+
+  header .navigation{
+    display: none;
+  }
+
+  header .navigation.active{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(1, 1, 1, 0.5);
+  }
+
+  header .navigation .navigation-items a{
+    color: #470b0b;
+    font-size: 1em;
+    margin: 10px;
+  }
+
+  header .navigation .navigation-items a:before{
+    background: #e9a7a7;
+    height: 5px;
+  }
+
+  header .navigation.active .navigation-items{
+    background: #fff;
+    width: 600px;
+    max-width: 600px;
+    margin: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0 5px 25px rgb(1 1 1 / 20%);
+  }
+
+  .menu-btn{
+    background: url(menu.png)no-repeat;
+    background-size: 30px;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+
+  .menu-btn.active{
+    z-index: 999;
+    background: url(close.png)no-repeat;
+    background-size: 25px;
+    background-position:center;
+    transition: 0.3s ease;
+  }
+}
+
+
+  </style>
+  <body>
+
+    
+    <section class="home">
+      <!-- <input type="checkbox" id="check"> -->
+      <header>
+        <h2><p class="logo">Fun Things to Do at the Beach!</p></h2>
+        <div class="menu-btn"></div>
+        <div class="navigation">
+          <div class="navigation-items">
+          <a href="index.html">Responsive</a>
+          <a href="adaptive.html">Adaptive</a>
+          <a href="fluid.html">Fluid</a>
+          <a href="fixed.html">Fixed</a>
+          <a href="mobile.html">Mobile-First</a>
+          </div>
+        </div>
+       
+      </header>
+      <video class="video-slide active" src="intro.mp4" autoplay muted loop></video>
+    
+
+  
+      <div class="content active">
+        <h1>Beach!<br><span>Sand&nbsp;&nbsp;Sea&nbsp;&nbsp;Sun&nbsp;&nbsp;</span></h1>
+        <p>When you think of the beach, you might imagine yourself relaxing on a chair with the cool ocean breeze brushing your skin with a drink at hand and the sun setting on the horizon. Of course, there are plenty more fun things to do at the beach than meets the eye
+          To make the most out of your experience, we have put together a list of fun and exciting beach activities, from building sandcastles to kite surfing to skinny dipping and more!</p>
+       
+      </div>
+      
+    </section>
+    <script>
+      const menuBtn = document.querySelector(".menu-btn");
+      const navigation = document.querySelector(".navigation");
+
+      menuBtn.addEventListener("click", () => {
+      menuBtn.classList.toggle("active");
+      navigation.classList.toggle("active");
+    });
+    </script>
+
+  </body>
+</html>
